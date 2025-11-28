@@ -44,7 +44,6 @@ export default function ToolsClient() {
     });
   }, [tools, search, category, sort]);
 
-  // Update URL when filters change
   useEffect(() => {
     const params = new URLSearchParams();
     if (search) params.set('search', search);
@@ -59,10 +58,8 @@ export default function ToolsClient() {
 
   return (
     <>
-      {/* filters panel */}
       <div className="mb-10 rounded-2xl border border-slate-800 bg-slate-950/80 px-5 py-5 md:px-6 md:py-6 shadow-[0_18px_45px_rgba(15,23,42,0.85)] animate-[fadeUp_0.8s_ease-out]">
         <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
-          {/* search */}
           <div className="w-full md:flex-1">
             <label className="mb-1 block text-xs font-medium uppercase tracking-wide text-slate-400">
               Search
@@ -76,7 +73,6 @@ export default function ToolsClient() {
             />
           </div>
 
-          {/* category */}
           <div className="w-full md:w-56">
             <label className="mb-1 block text-xs font-medium uppercase tracking-wide text-slate-400">
               Category
@@ -95,7 +91,6 @@ export default function ToolsClient() {
             </select>
           </div>
 
-          {/* sort */}
           <div className="w-full md:w-44">
             <label className="mb-1 block text-xs font-medium uppercase tracking-wide text-slate-400">
               Sort by
@@ -111,13 +106,11 @@ export default function ToolsClient() {
           </div>
         </div>
 
-        {/* results count */}
         <div className="mt-4 text-xs text-slate-400">
           Showing <span className="font-semibold text-slate-200">{filteredTools.length}</span> of <span className="font-semibold text-slate-200">{tools.length}</span> tools
         </div>
       </div>
 
-      {/* tools grid */}
       {filteredTools.length > 0 ? (
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {filteredTools.map((tool, index) => (

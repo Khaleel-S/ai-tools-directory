@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     siteName: 'AI Verse',
     images: [
       {
-        url: 'https://ai-verse-beta.vercel.app/og-image.png', // Add this image (1200x630px)
+        url: 'https://ai-verse-beta.vercel.app/preview.png', // Add this image (1200x630px)
         width: 1200,
         height: 630,
         alt: 'AI Verse - AI tools directory',

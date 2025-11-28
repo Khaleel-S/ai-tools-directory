@@ -1,19 +1,10 @@
-<<<<<<< HEAD
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
 
 First, run the development server:
 
-```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
@@ -34,12 +25,8 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-=======
-# ai-tools-directory
->>>>>>> 4dedb5763597a7a1906f895d953b60ae9db6cfc2
->>>
 
+# ai-tools-directory
 AI Tools Directory - SDE Intern Assignment
 Live Demo: https://ai-tools-directory-xxxx.vercel.app
 GitHub: github.com/yourusername/ai-tools-directory
@@ -75,6 +62,8 @@ json
   "tags": ["Art", "Discord"],
   "website": "https://www.midjourney.com"
 }
+
+
 🔧 Dataset Generation Process
 Method 1: Manual Curation + AI Assistance (Used)
 text
@@ -91,8 +80,9 @@ python scrape_ai_tools.py theresanaiforthat.com
 # Generated: tools.json → lib/data.ts
 AI Prompts Used (see below)
 
+
+
 🛠 Tech Stack
-text
 Frontend: Next.js 16.0.5 (App Router) + TypeScript
 Styling: Tailwind CSS + shadcn/ui components
 Fonts: Manrope (body) + Syne (headings) via next/font/google
@@ -115,6 +105,8 @@ Vercel Templates: Next.js showcase layouts
 
 Color Palette: Slate-900 base → Blue/Indigo gradients → Glassmorphism overlays
 
+
+
 🤖 AI Prompts Used
 Prompt 1: Dataset Generation
 text
@@ -125,6 +117,8 @@ text
 Prompt 3: SEO Implementation
 text
 "Next.js 14 App Router complete SEO setup for tools directory. Dynamic metadata for /tools/[slug], sitemap.ts with all tool pages, OpenGraph/Twitter cards, canonical URLs, robots.txt. Static generation with generateStaticParams."
+
+
 🚀 Deployment
 text
 ✅ Vercel: Automatic CI/CD from GitHub
@@ -133,7 +127,7 @@ text
 ✅ Custom Domain: Ready for yourdomain.com
 ✅ Analytics: Vercel Speed Insights + Web Vitals
 📈 Performance
-text
+
 • Lighthouse Score: 98/100 (Performance)
 • Core Web Vitals: All GREEN
 • Bundle Size: 45KB gzipped

@@ -68,18 +68,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 }
 
-// ← ADD THIS: Static generation for all tool pages
 export async function generateStaticParams() {
   const tools = await import('@/lib/data').then(mod => mod.getAllTools())
   return tools.map((tool) => ({
     slug: tool.slug
   }))
 }
-
-
-
-
-
 
 
 export default async function ToolDetailPage({ params }: Props) {
@@ -92,14 +86,12 @@ export default async function ToolDetailPage({ params }: Props) {
 
   return (
     <main className="min-h-screen bg-[#020617] text-slate-50 overflow-hidden">
-      {/* Enhanced animated background */}
       <div className="pointer-events-none fixed inset-0 -z-10">
         <div className="h-[320px] bg-[radial-gradient(circle_at_top,_#1d4ed8_0,_transparent_60%)] opacity-60" />
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMSIgZmlsbD0icmdiYSgx4dGVkOCwgMC40KSIvPgo8Y2lyY2xlIGN4PSIxMCIgY3k9IjEwIiByPSIwLjUiIGZpbGw9InJnYmEoMjksIDc4LCAyMTYsIDAuMykiLz4KPGNpcmNsZSBjeD0iNTAiIGN5PSI1MCIgcj0iMC44IiBmaWxsPSJyZ2JhKDEyLCAxMDksIDI1MiwgMC4yKSIvPgo8L3N2Zz4K')] opacity-20 animate-pulse" />
       </div>
 
       <div className="max-w-2xl mx-auto px-4 md:px-6 lg:px-8 py-8 md:py-12 relative z-10">
-        {/* Enhanced back navigation */}
         <div className="mb-8 flex items-center justify-between gap-4 group">
           <Link
             href="/tools"
@@ -111,15 +103,12 @@ export default async function ToolDetailPage({ params }: Props) {
           
         </div>
 
-        {/* Compact hero card */}
         <div className="relative mb-6">
           <div className="absolute -inset-1.5 bg-gradient-to-r from-blue-500/20 via-transparent to-blue-500/20 rounded-2xl blur-lg animate-pulse" />
           <div className="relative rounded-2xl border border-slate-800/60 bg-gradient-to-br from-slate-950/90 via-slate-950/70 to-slate-900/90 px-6 py-6 md:px-8 md:py-8 shadow-xl shadow-slate-900/50 backdrop-blur-xl">
             
-            {/* Compact top row */}
             <div className="flex flex-col gap-6 md:flex-row md:items-start md:gap-8">
               
-              {/* Compact logo */}
               <div className="flex-shrink-0 relative group">
                 <div className="relative h-20 w-20 md:h-24 md:w-24 overflow-hidden rounded-2xl border-2 border-slate-700/50 bg-gradient-to-br from-slate-900/80 to-slate-800/60 shadow-xl shadow-slate-900/60 backdrop-blur-md transition-all duration-500 group-hover:scale-110 group-hover:shadow-blue-500/30 group-hover:-rotate-3">
                   <Image
@@ -133,10 +122,8 @@ export default async function ToolDetailPage({ params }: Props) {
                 </div>
               </div>
 
-              {/* Compact text content */}
               <div className="flex-1 space-y-4">
                 
-                {/* Compact badge */}
                 <div className="inline-flex items-center gap-2 rounded-xl border border-slate-700/50 bg-gradient-to-r from-slate-900/80 to-slate-800/60 px-4 py-1.5 text-xs backdrop-blur-sm shadow-lg shadow-slate-900/30 hover:shadow-blue-500/20 transition-all duration-300 hover:scale-[1.02]">
                   <span className="font-semibold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent text-xs">
                     {tool.category}
@@ -147,17 +134,14 @@ export default async function ToolDetailPage({ params }: Props) {
                   </span>
                 </div>
 
-                {/* Compact title */}
                 <h1 className="text-2xl md:text-3xl  font-black tracking-tight bg-gradient-to-r from-slate-100 via-blue-100 to-slate-200 bg-clip-text text-transparent drop-shadow-xl">
                   {tool.name}
                 </h1>
 
-                {/* Compact description */}
                 <p className="text-sm md:text-base text-slate-200 leading-relaxed max-w-lg">
                   {tool.description}
                 </p>
 
-                {/* Compact stats */}
                 <div className="flex flex-wrap items-center gap-3 pt-1">
                   <div className="inline-flex items-center gap-1.5 rounded-xl bg-gradient-to-r from-amber-400/15 to-orange-500/10 px-3 py-1.5 text-xs font-semibold text-amber-300 border border-amber-400/30 shadow-lg shadow-amber-500/20 backdrop-blur-sm hover:shadow-amber-400/40 transition-all duration-300 hover:scale-105">
                     <Star className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
@@ -180,7 +164,6 @@ export default async function ToolDetailPage({ params }: Props) {
                   )}
                 </div>
 
-                {/* Compact CTA */}
                 <div className="pt-2">
                   <a
                     href={tool.website}
@@ -196,7 +179,6 @@ export default async function ToolDetailPage({ params }: Props) {
               </div>
             </div>
 
-            {/* Compact stats grid */}
             <div className="grid gap-3 md:grid-cols-3 mt-8 pt-6 border-t border-slate-800/50">
               <div className="group rounded-xl border border-slate-800/50 bg-gradient-to-b from-slate-900/80 to-slate-800/60 p-4 backdrop-blur-md shadow-xl shadow-slate-900/40 hover:shadow-blue-500/30 hover:-translate-y-1.5 transition-all duration-500">
                 <div className="flex items-center gap-2 mb-1">
@@ -231,7 +213,6 @@ export default async function ToolDetailPage({ params }: Props) {
           </div>
         </div>
 
-        {/* Compact features */}
         <div className="mt-12">
           <h2 className="text-xl md:text-2xl font-black tracking-tight text-slate-100 mb-6 bg-gradient-to-r from-slate-200 to-slate-100 bg-clip-text text-transparent">
             Why {tool.name}?

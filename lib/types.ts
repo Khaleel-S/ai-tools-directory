@@ -1,4 +1,3 @@
-// lib/types.ts - CREATE THIS FILE
 export interface Tool {
 
   id: string

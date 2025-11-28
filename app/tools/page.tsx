@@ -4,11 +4,9 @@ import ToolsClient from './ToolsClient';
 export default function ToolsPage() {
   return (
     <main className="min-h-screen bg-[#020617] text-slate-50">
-      {/* subtle top glow */}
       <div className="pointer-events-none fixed inset-x-0 top-0 -z-10 h-[320px] bg-[radial-gradient(circle_at_top,_#1d4ed8_0,_transparent_60%)] opacity-60" />
       
       <div className="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 py-10 md:py-14">
-        {/* header */}
         <div className="mb-8 flex items-center justify-between gap-4">
           <a href="/" className="inline-flex items-center gap-2 text-sm font-medium text-slate-300 hover:text-slate-100">
             <span className="text-lg">←</span>
@@ -19,7 +17,6 @@ export default function ToolsPage() {
           </span>
         </div>
 
-        {/* title + subtitle */}
         <div className="mb-8 space-y-2">
           <h1 className="text-3xl md:text-4xl font-semibold tracking-tight">
             Browse all AI tools

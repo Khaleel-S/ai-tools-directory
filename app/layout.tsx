@@ -27,7 +27,6 @@ export const metadata: Metadata = {
   creator: 'AI Verse',
   publisher: 'AI Verse',
   
-  // Open Graph (Social media previews)
   openGraph: {
     title: 'AI Verse - Best AI tools directory',
     description: 'Discover hand-picked AI tools for developers, creators, and founders. Compare ChatGPT, Claude, Gemini, and more.',
@@ -45,7 +44,6 @@ export const metadata: Metadata = {
     type: 'website',
   },
   
-  // Twitter Cards
   twitter: {
     card: 'summary_large_image',
     title: 'AI Verse - Best AI tools directory',
@@ -54,12 +52,10 @@ export const metadata: Metadata = {
     creator: '@yourtwitterhandle', // Optional
   },
   
-  // Canonical URL & more
   alternates: {
     canonical: 'https://ai-verse-beta.vercel.app',
   },
   
-  // Robots (allows indexing)
   robots: {
     index: true,
     follow: true,
@@ -72,7 +68,6 @@ export const metadata: Metadata = {
     },
   },
   
-  // Icons (for browser tab)
   icons: {
     icon: '/favicon.ico',
     shortcut: '/favicon-16x16.png',

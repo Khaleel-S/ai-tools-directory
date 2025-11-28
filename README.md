@@ -125,23 +125,5 @@ text
 ✅ Analytics: Vercel Speed Insights + Web Vitals
 📈 Performance
 
-• Lighthouse Score: 98/100 (Performance)
-• Core Web Vitals: All GREEN
-• Bundle Size: 45KB gzipped
-• TTFB: <100ms (Vercel Edge)
-• Static Pages: 200+ pre-generated
 🔮 With 2 More Days - Improvements
-Day 1: Advanced Features
-text
-• PWA: Installable app + offline support
-• Infinite Scroll: Replace pagination
-• Tool Tags: Filter by "No-Code", "Developer", "Beta"
-• Recently Viewed: localStorage persistence
-• Share Buttons: Twitter/Discord/LinkedIn
-Day 2: Polish + Analytics
-text
-• Skeleton Loaders: Instant perceived performance
-• Live Search: As-you-type filtering
-• Heatmaps: Track popular categories/tools
-• A/B Testing: Different hero CTAs
-• Newsletter Signup: Email capture modal
+ Comparision of bots based on the rating and performance

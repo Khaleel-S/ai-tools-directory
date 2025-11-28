@@ -74,13 +74,10 @@ text
 5. Added realistic metrics → popularity (users), ratings (4.5-4.9)
 6. TypeScript validation → Ensured data integrity
 Method 2: Web Scraping (Alternative - Not Used)
-text
-# Scraping script (for reference only)
-python scrape_ai_tools.py theresanaiforthat.com
+
+
 # Generated: tools.json → lib/data.ts
 AI Prompts Used (see below)
-
-
 
 🛠 Tech Stack
 Frontend: Next.js 16.0.5 (App Router) + TypeScript

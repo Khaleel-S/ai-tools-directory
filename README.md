@@ -28,7 +28,7 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 # ai-tools-directory
 AI Tools Directory - SDE Intern Assignment
-Live Demo: ai-verse-beta.netlify.app
+Live Demo: ai-verse-beta.vercel.app
 GitHub: github.com/Khaleel-S/ai-tools-directory
 
 A polished content directory website built with Next.js 16 App Router + Tailwind CSS featuring 200+ real AI tools with advanced filters, comparison modal, SEO, and sitemap generation.

@@ -28,8 +28,8 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 # ai-tools-directory
 AI Tools Directory - SDE Intern Assignment
-Live Demo: https://ai-tools-directory-xxxx.vercel.app
-GitHub: github.com/yourusername/ai-tools-directory
+Live Demo: ai-verse-beta.netlify.app
+GitHub: github.com/Khaleel-S/ai-tools-directory
 
 A polished content directory website built with Next.js 16 App Router + Tailwind CSS featuring 200+ real AI tools with advanced filters, comparison modal, SEO, and sitemap generation.
 
@@ -76,8 +76,8 @@ text
 Method 2: Web Scraping (Alternative - Not Used)
 
 
-# Generated: tools.json → lib/data.ts
-AI Prompts Used (see below)
+# Generated: → lib/data.ts
+dara.ts -> Serves as json file where the data is written in the form of key-value pairs.
 
 🛠 Tech Stack
 Frontend: Next.js 16.0.5 (App Router) + TypeScript
@@ -89,6 +89,7 @@ Deployment: Vercel (SSG + ISR)
 Linting: ESLint + Prettier
 Animations: Tailwind + Framer Motion
 SEO: Next.js Metadata API + sitemap.ts
+
 🎨 Design Inspiration (12 References)
 Dribbble: "AI Tools Directory" by UI8 → Hero gradient, card hover effects
 
@@ -108,22 +109,16 @@ Color Palette: Slate-900 base → Blue/Indigo gradients → Glassmorphism overla
 Prompt 1: Dataset Generation
 text
 "Generate 150 real AI tools dataset in TypeScript interface format. Include: id, slug, name, description, logo URL, category (Image/Text/Video/etc), pricing (Free/Freemium/Paid), rating (4.5-4.9), popularity (1M-250M users), tags array, website URL. Base on theresanaiforthat.com top tools. Export as getAllTools() function."
-Prompt 2: Comparison Feature
-text
-"Create React Context + Modal for comparing 4 AI tools side-by-side. Show category, pricing, rating, popularity in grid layout. Dark theme Tailwind CSS. Include toggle buttons on ToolCard. Next.js 14 App Router compatible."
-Prompt 3: SEO Implementation
+
+Prompt 2: SEO Implementation
 text
 "Next.js 14 App Router complete SEO setup for tools directory. Dynamic metadata for /tools/[slug], sitemap.ts with all tool pages, OpenGraph/Twitter cards, canonical URLs, robots.txt. Static generation with generateStaticParams."
 
 
 🚀 Deployment
-text
+
 ✅ Vercel: Automatic CI/CD from GitHub
-✅ Static Generation: All 200+ tool pages pre-built
-✅ ISR: Homepage revalidates every 24h
-✅ Custom Domain: Ready for yourdomain.com
-✅ Analytics: Vercel Speed Insights + Web Vitals
-📈 Performance
+
 
 🔮 With 2 More Days - Improvements
  Comparision of bots based on the rating and performance
